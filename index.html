@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<style>
+		li{
+			font-size: 20pt;
+			padding-bottom: 10px;
+		}
+
+		.embark-video-section{
+			display: flex;
+		}
+	</style>
+	<body>
+		<div class="reveal">
+			<div class="slides" >
+				<section data-background-iframe="particles.html">
+					<h2>Alex Carter Dev History</h2>
+					<p >Projects: Gas Refinery, Synthesis (and more)</p>
+				</section>
+				<section >
+					<h4>Gas Refinery - (Gas Media Group)</i></h4> 
+					<section>
+						<h5>Overview</h5>
+						<hr>
+						<p>Gas Refinery is selection of microservices, infrastructure, tooling and applications that collect, "refine", and present company data and allow staff to automate large sections of their day to day operations </p>
+						<br>
+						<small>To date it has cataloged over 1 million video assets, all automaticatlly collected from external sources on a distrubted compute system</small>
+						
+					</section>
+					
+					<section>
+						<h5>Achievements</h5>
+						<ul>
+							<li>Designed, Developed, Deployed and Matained a micro-service full-stack application from scratch.</li>
+							<li>Created and maitained a hybrid cloud archectecture.</li>
+							<li>Developed a distrubted video rendering solution accessible from a simple web interface.</li>
+							<li>Developed a distrubted scraping system to collect client-content from a varity of sources.</li>
+							<li>Succesully developed a asset pipeline to store, process, and analzye 1m+ video clips.</li>
+							<li>Created, managed, and hired for this new team.</li>
+						</ul>
+					</section>
+					<section><h5>Tech-Stack</h5>
+						<ul>
+							<li>NodeJS/Typescript accross all systems to allow for code-reuse</li>
+							<li>Docker/Kubernetes for micro-service hosting.</li>
+							<li>Redis-Backed Job Queue Distrubution System</li>
+							<li>Google Cloud Platform for Cloud, Proxmox Ubuntu VMs for On-Prem</li>
+						</ul></section>
+				</section>
+				<section>
+					<h4>Synthesis - (Autodesk Internship)</i></h4> 
+					<section>
+						<br><br>
+						<h5>Overview</h5>
+						<hr>
+						<section>
+							<img width=500 src="https://i.ytimg.com/vi/PAgNcmXecHM/maxresdefault.jpg"></img>
+						</section>
+						<p>A real-time physics simulator for testing FRC/FTC CAD designs in an interactive enviornment</p>
+					</section>
+					
+					<section>
+						<h5>Achievements</h5>
+						<ul>
+							<li>Became lead for the exporter team, managing tasks and overseeing sprints</li>
+							<li>Developed systems to allow for the processing then importing of 3D CAD models into a realtime simulation</li>
+							<li>Performed convex-hull decompisition of exported meshes to allow for real-time perfomance</li>
+							<li>Worked with teams to expirement with hardware-in-the loop simulation</li>
+							<li>Created debugging tooling in engine to properly analyze collision meshes</li>
+						</ul>
+					</section>
+					<section><h5>Tech-Stack</h5>
+						<ul>
+							<li>C# for Autodesk Invector Plugins</li>
+							<li>C++ for Autodesk Fusion 360 Plugins</li>
+							<li>C# + Unity for the rendering enviorment</li>
+							<li>C++ for Convex Hull Decomposition Service</li>
+						</ul></section>
+				</section>
+				<section>
+					<section>
+						<h4>Lightning Round - (Personal Projects) </h4> 
+					</section>
+					
+					<section>
+						<h5>Rave Buddy</h5>
+						<small>Off-the-grid embedded GPS tracker to allow for communication in enviorments in-which cell service may not be possible (Festivals) </small>
+						<hr>
+						<ul>
+							<li>ESP32 embedded system running FreeRTOS coded in C++</li>
+							<li>iPhone/Android apps written in Flutter</li>
+							<li>LoRa based communication to allow for 3+ miles range, with out needing GSM/LTE</li>
+							<li>Supports basic messaging and LED controls as well</li>
+						</ul>
+					</section>
+
+					<section>
+						<h5>VictoryCar</h5>
+						<small>AV Deep-Learning Experimentation (U-Net-based CNN's in Tensorflow)</small>
+						<div class="embark-video-section">
+							<section>
+								<video data-autoplay  src="https://images-ext-2.discordapp.net/external/IYgb3XRxZd-_KPavWsxgqJFW_-qCzMfKYUEdVYR--bo/https/i.imgur.com/7PfU5kW.mp4"/>
+							</section>
+							<section>
+								<video data-autoplay src="https://images-ext-1.discordapp.net/external/Jvg4AliSmLI08j5F_lN2Ykqoc9OZMKs9dJXmDHI00mc/https/i.imgur.com/lCeyFvM.mp4"/>
+							</section>
+						</div>
+					
+					</section>
+
+					<section>
+						<h5>FireWatch</h5>
+						<small>Full-Stack Application to Track Wildfires in CA</small>
+						<hr>
+						<img height=500 src="assets/firewatch.png"></img>
+					
+					</section>
+			
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

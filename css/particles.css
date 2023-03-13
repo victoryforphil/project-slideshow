@@ -1,0 +1,54 @@
+body{
+    background-color: #040404;
+    overflow: hidden;
+  }
+  
+  @font-face {
+      font-family: HACKED;
+      src: url("../fonts/HACKED.ttf");
+  }
+  
+  @font-face {
+      font-family: ProductSansNormal;
+      src: url("../fonts/Product Sans Regular.ttf");
+  }
+  
+  @font-face {
+      font-family: ProductSansNormal;
+      src: url("../fonts/Product Sans Regular.ttf");
+  }
+  
+  .title-container {
+      position: absolute;
+      top: 40%;
+      left: 42%;
+      text-align: center;
+      z-index: 1;
+  }
+  .title-container h1{
+    font-family: HACKED;
+    font-size: 70px;
+    color: #FFFFFF
+  }
+  .title-container h3{
+    font-family: ProductSansNormal;
+    font-size: 20px;
+    color: #FFFFFF
+  }
+  
+  .title-container hr{
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    width: 60%;
+    z-index: 1;
+    margin-top:0;
+    margin-bottom: 2;
+  }
+  
+  canvas {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: -3;
+  
+  }
